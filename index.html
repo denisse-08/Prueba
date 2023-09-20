@@ -3,15 +3,144 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hola mundo</title>
-    <!-- Vincula el archivo CSS externo -->
     <link rel="stylesheet" href="styles.css">
+    <title>Mi portafolio</title>
 </head>
 <body>
-    <div class="container">
-        <h1>Hola mundo</h1>
-        <p>es la primera practica en vercel</p>
-        <button class="btn">¡Haz clic en mí!</button>
+    <nav class="navbar">
+        <div class="container">
+            <h1>Mi portafolio</h1>
+            <div class="menu-toggle">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <ul class="menu">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Acerca de</a></li>
+                <li><a href="#">Servicios</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="content">
+        <!-- Contenido de la página aquí -->
+
+        <!-- Sección de descripción -->
+        <div class="descripcion">
+            <img src="./yo.jpeg">
+            <p>Soy una programadora de 21 años con una pasión por la inteligencia artificial, desarrollo web y gestion de proyectos. ¡Bienvenido a mi sitio web!</p>
+            <div class="cursi-text">
+                <h1>¡Programa tus sueños!</h1>
+                <p>En el mundo de la programación, cada línea de código es un paso más cerca de tus sueños. ¡Con determinación y pasión, puedes lograr cualquier cosa!</p>
+            </div>
+        </div>
+        <div class="gallery">
+            <div class="gallery-item">
+                <img src="./img1.jpeg" alt="Imagen 1">
+            </div>
+            <div class="gallery-item">
+                <img src="./img2.jpg" alt="Imagen 2">
+            </div>
+            <div class="gallery-item">
+                <img src="./img3.jpg" alt="Imagen 3">
+            </div>
+            
+        </div>
+
+       <!-- Sección de galería de tecnologías -->
+        <!-- Sección de galería de tecnologías -->
+<section class="tecnologias-gallery">
+    <h2>Tecnologías que domino</h2>
+    <div class="grid-container">
+        <div class="grid-item">
+            <p>Angular</p>
+            <img src="./angular.png" alt="Tecnología 1" class="tecnologia-img">
+        </div>
+        <div class="grid-item">
+            <img src="./js.png" alt="Tecnología 2" class="tecnologia-img">
+            <p>JavaScript</p>
+        </div>
+        <div class="grid-item">
+            <img src="./ts.png" alt="Tecnología 3" class="tecnologia-img">
+            <p>TypeScript</p>
+        </div>
+        <div class="grid-item">
+            <img src="./mongo.png" alt="Tecnología 4" class="tecnologia-img">
+            <p>MongoDB</p>
+        </div>
+        <!-- Agrega más elementos de galería de tecnologías según sea necesario -->
+        <div class="grid-item">
+            <img src="./MySQL-Logo.jpg" alt="Tecnología 5" class="tecnologia-img">
+            <p>MYSQL</p>
+        </div>
+        <div class="grid-item">
+            <img src="./node.png" alt="Tecnología 6" class="tecnologia-img">
+            <p>Node JS </p>
+        </div>
+        <div class="grid-item">
+            <img src="./vba.png" alt="Tecnología 6" class="tecnologia-img">
+            <p>VBA</p>
+        </div>
+        <div class="grid-item">
+            <img src="./1510966735.jpg" alt="Tecnología 6" class="tecnologia-img">
+            <p>Node JS </p>
+        </div>
+        <div class="grid-item">
+            <img src="./any.png" alt="Tecnología 6" class="tecnologia-img">
+            <p>Python Anywhere </p>
+        </div>
+        <!-- Agrega más elementos de galería de tecnologías según sea necesario -->
     </div>
+</section>
+
+<section class="recent-projects">
+    <h2>Proyectos Recientes</h2>
+    <div class="project-carousel">
+        <div class="project-slide">
+            <img src="proyecto1.jpg" alt="Proyecto 1">
+            <h3>Proyecto 1</h3>
+            <p>Descripción del Proyecto 1</p>
+        </div>
+        <div class="project-slide">
+            <img src="proyecto2.jpg" alt="Proyecto 2">
+            <h3>Proyecto 2</h3>
+            <p>Descripción del Proyecto 2</p>
+        </div>
+        <div class="project-slide">
+            <img src="proyecto3.jpg" alt="Proyecto 1">
+            <h3>Proyecto 3</h3>
+            <p>Descripción del Proyecto 3</p>
+        </div>
+        <div class="project-slide">
+            <img src="proyecto4.jpg" alt="Proyecto 2">
+            <h3>Proyecto 4</h3>
+            <p>Descripción del Proyecto 4</p>
+        </div>
+        <div class="project-slide">
+            <img src="proyecto5.jpg" alt="Proyecto 1">
+            <h3>Proyecto 5</h3>
+            <p>Descripción del Proyecto 6</p>
+        </div>
+        <div class="project-slide">
+            <img src="proyecto6.jpg" alt="Proyecto 2">
+            <h3>Proyecto 6</h3>
+            <p>Descripción del Proyecto 7</p>
+        </div>
+    </div>
+    <div class="carousel-controls">
+        <button id="prevBtn" class="carousel-btn">&#10094;</button>
+        <button id="nextBtn" class="carousel-btn">&#10095;</button>
+    </div>
+</section>
+
+    </div>
+    <script src="script.js"></script>
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Denisse Hernandez San Juan</p>
+        </div>
+    </footer>
+    
 </body>
 </html>

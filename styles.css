@@ -1,54 +1,342 @@
-/* styles.css */
-
-/* Establecemos un fondo degradado */
 body {
-    background: linear-gradient(to bottom, #3498db, #2980b9);
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
 }
 
-/* Estilo para el contenedor principal */
+.navbar {
+    background-color: rgb(11, 168, 19);
+    color: #fff;
+    padding: 10px 0;
+}
+
 .container {
-    max-width: 800px;
+    max-width: 1200px;
     margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1 {
+    margin: 0;
+    font-size: 24px;
+    color: #fff;
+}
+
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 3px 0;
+}
+
+.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.menu li {
+    margin-right: 20px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.menu a:hover {
+    color: #ff5733;
+}
+
+@media screen and (max-width: 768px) {
+    .menu {
+        display: none;
+        flex-direction: column;
+        background-color: rgb(11, 168, 19);
+        position: absolute;
+        top: 60px;
+        left: 0;
+        right: 0;
+    }
+
+    .menu.active {
+        display: flex;
+    }
+
+    .menu li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+}
+
+.descripcion {
+    text-align: center;
+    margin: 10px 0;
+}
+
+.descripcion img {
+    width: 200px; /* Define el ancho de la imagen */
+    height: 200px; /* Define la altura de la imagen */
+    border-radius: 50%; /* Hace que la imagen sea circular */
+    display: block; /* Quita cualquier margen lateral que pueda haber */
+    margin: 0 auto; /* Centra horizontalmente la imagen */
+}
+
+.descripcion p {
+    font-size: 18px;
+    line-height: 1.5;
+    color: #333;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+.cursi-text {
+    text-align: center;
+    margin: 20px auto;
     padding: 20px;
-    background-color: rgba(255, 255, 255, 0.8);
+    max-width: 600px;
+    background-image: url('/programando.avif'); /* Reemplaza 'tu_imagen_de_fondo.jpg' con la ruta de tu imagen */
+    background-size: cover; /* Ajusta el tamaño de la imagen para cubrir todo el div */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
-/* Animación de desplazamiento */
-@keyframes slideIn {
-    from {
-        transform: translateY(-100%);
-        opacity: 0;
-    }
-    to {
-        transform: translateY(0);
-        opacity: 1;
-    }
+.cursi-text h1 {
+    color: #299c06; /* Color de fuente naranja */
+    font-size: 36px;
+    margin-bottom: 10px;
 }
 
-/* Aplicar la animación al contenedor principal */
-.container {
-    animation: slideIn 1s ease-in-out;
+.cursi-text p {
+    font-size: 20px;
+    color: #333; /* Color de fuente gris oscuro */
+    line-height: 1.5;
 }
 
-/* Estilo para un botón con animación de hover */
-.btn {
-    display: inline-block;
-    padding: 10px 20px;
-    margin-top: 20px;
-    background-color: #e74c3c;
-    color: white;
-    border: none;
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.gallery-item {
+    width: 300px;
+    height: 200px;
+    overflow: hidden;
+    border: 1px solid #ddd;
     border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: transform 0.3s ease-in-out;
 }
 
-/* Cambiar el color del botón al pasar el mouse sobre él */
-.btn:hover {
-    background-color: #c0392b;
+.gallery-item img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease-in-out;
+}
+
+.gallery-item:hover {
+    transform: scale(1.05);
+}
+
+/* styles.css */
+
+/* ... (estilos anteriores) */
+
+.tecnologias-gallery {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.tecnologias-gallery h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Cambia a 3 columnas */
+    grid-gap: 20px;
+}
+
+.grid-item {
+    text-align: center;
+}
+
+/* Establece las dimensiones de las imágenes */
+.tecnologia-img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover; /* Ajusta el comportamiento de la imagen */
+    border-radius: 50%; /* Hace que las imágenes sean circulares */
+    cursor: pointer; /* Cambia el cursor al pasar sobre las imágenes */
+}
+
+.grid-item p {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #333;
+}
+
+/* styles.css */
+
+/* ... (estilos anteriores) */
+
+body {
+    background-color: #f9f9f9; /* Color de fondo del body */
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.recent-projects {
+    text-align: center;
+    margin: 40px auto; /* Centra vertical y horizontalmente el carrusel */
+    background-color: inherit; /* Hereda el color de fondo del body */
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    padding: 20px;
+}
+
+.project-carousel {
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+}
+
+.project-slide {
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    transition: transform 0.5s ease-in-out;
+    margin: 10px; /* Espacio entre las diapositivas */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: relative; /* Mantener la posición original */
+    flex: 0 0 auto; /* Evita que las diapositivas cambien de tamaño */
+}
+
+.project-slide img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.project-slide h3 {
+    margin: 10px 0;
+    font-size: 20px;
+    color: #333;
+}
+
+.project-slide p {
+    font-size: 16px;
+    color: #666;
+}
+
+/* styles.css */
+
+/* ... (estilos anteriores) */
+
+.project-carousel {
+    display: flex;
+    overflow: hidden;
+    justify-content: center; /* Centra horizontalmente el carrusel */
+    align-items: center;
+    max-width: 100%; /* Ajuste máximo al ancho de la pantalla */
+    margin: 0 auto;
+    background-color: #f9f9f9;
+    border: none; /* Elimina el borde */
+    border-radius: 0; /* Elimina el redondeo de bordes */
+    box-shadow: none; /* Elimina la sombra */
+}
+
+.project-slide {
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 0; /* Elimina el redondeo de bordes */
+    transition: transform 0.5s ease-in-out;
+    margin: 0; /* Elimina el espacio entre las diapositivas */
+    position: relative;
+    flex: 0 0 100%; /* Mantiene el tamaño fijo del 100% del carrusel */
+    display: none; /* Oculta todas las diapositivas por defecto */
+}
+
+.project-slide.active {
+    display: block; /* Muestra solo la diapositiva activa */
+}
+
+.project-slide img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 0; /* Elimina el redondeo de bordes */
+}
+
+.project-slide h3 {
+    margin: 10px 0;
+    font-size: 20px;
+    color: #333;
+}
+
+.project-slide p {
+    font-size: 16px;
+    color: #666;
+}
+
+.carousel-controls {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.carousel-btn {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    font-size: 24px;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 0; /* Elimina el redondeo de bordes */
+}
+
+.carousel-btn:hover {
+    background-color: #555;
+}
+
+footer {
+    background-color: rgb(11, 168, 19);
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
 }
